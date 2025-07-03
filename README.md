@@ -1,6 +1,6 @@
 # 🌍 Afet Uyarı ve Müdahale Bilgi Asistanı
 
-Bu proje, **BTK Akademi Hackathon 2025** kapsamında geliştirilmiştir. Amaç; Türkiye'deki şehirlerin afet risklerine göre vatandaşlara **önleyici bilgi ve müdahale önerileri sunan bir yapay zeka destekli bilgi asistanı** oluşturmaktır.
+Amaç; Türkiye'deki şehirlerin afet risklerine göre vatandaşlara **önleyici bilgi ve müdahale önerileri sunan bir yapay zeka destekli bilgi asistanı** oluşturmaktır.
 
 Uygulama, kullanıcının seçtiği şehre göre olası afet türlerini belirler ve **Gemini 2.5 Flash** modeli aracılığıyla sade, anlaşılır, maddeler halinde öneriler üretir.
 
