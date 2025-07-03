@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Afet Bilgi Asistanı</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h2>Afet Uyarı ve Müdahale Bilgi Asistanı</h2>
+
+    <form method="POST">
+        <label for="city">Şehir Seç:</label><br>
+        <select name="city" id="city">
+            {% for city in cities %}
+                <option value="{{ city }}" {% if city == selected_city %}selected{% endif %}>{{ city }}</option>
+            {% endfor %}
+        </select><br><br>
+        <button type="submit">Önerileri Göster</button>
+    </form>
+
+    <div id="loadingText">Gemini'den öneriler yükleniyor...</div>
+    <div class="loader" id="loader"></div>
+
+    {% if result %}
+        <div class="result-box" id="resultBox">
+            <h3>Gemini'den Öneriler:</h3>
+            <div>{{ result | safe }}</div>
+        </div>    
+    {% endif %}
+
+    <script>
+        const form = document.querySelector("form");
+        const loader = document.getElementById("loader");
+        const loadingText = document.getElementById("loadingText");
+        const resultBox = document.getElementById("resultBox");
+    
+        form.addEventListener("submit", () => {
+            // Önceki sonucu gizle
+            if (resultBox) resultBox.style.display = "none";
+    
+            // Spinner'ı göster
+            loader.style.display = "block";
+            loadingText.style.display = "block";
+        });
+    </script>
+    
+    
+</body>
+</html>

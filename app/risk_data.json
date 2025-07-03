@@ -1,0 +1,35 @@
+{
+    "İstanbul": {
+      "risk": ["deprem"],
+      "öncelik": "yüksek"
+    },
+    "Ankara": {
+      "risk": ["sel"],
+      "öncelik": "orta"
+    },
+    "İzmir": {
+      "risk": ["deprem", "yangın"],
+      "öncelik": "yüksek"
+    },
+    "Antalya": {
+      "risk": ["yangın"],
+      "öncelik": "yüksek"
+    },
+    "Rize": {
+      "risk": ["sel", "heyelan"],
+      "öncelik": "yüksek"
+    },
+    "Van": {
+      "risk": ["deprem"],
+      "öncelik": "yüksek"
+    },
+    "Konya": {
+      "risk": ["kuraklık"],
+      "öncelik": "orta"
+    },
+    "Artvin": {
+      "risk": ["heyelan"],
+      "öncelik": "yüksek"
+    }
+  }
+  
